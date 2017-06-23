@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="lwa4" >
+
+  <xacro:include filename="$(find schunk_description)/urdf/materials.urdf.xacro" />
+
+  <!-- arm -->
+  <xacro:include filename="$(find schunk_description)/urdf/lwa4d/lwa4d_soft_limits.urdf.xacro" />
+  <!-- hand -->
+  <xacro:include filename="$(find schunk_description)/urdf/sdh/sdh.urdf.xacro" />
+
+   <!-- Create fixed base link (base of pedestal) -->
+  <link name="base_link" />
+  <link name="mid_link" />
+
+  <joint name="base_mid_joint" type="fixed">
+    <origin xyz="0 0 1.02" rpy="0 0 0" />
+    <parent link="base_link"/>
+    <child link="mid_link"/>
+  </joint>
+
+  <!-- Left Arm -->
+  <xacro:schunk_lwa4d_custom name="left_arm" invert_j1="false" invert_j2="false" invert_j3="false" invert_j4="false" invert_j5="false" invert_j6="false" invert_j7="false" has_podest="false" parent="mid_link">
+    <origin xyz="0 0.10 0.0" rpy="-1.5708 0 0" />
+  </xacro:schunk_lwa4d_custom>
+
+  <!-- Right Arm -->
+  <xacro:schunk_lwa4d_custom name="right_arm" invert_j1="true" invert_j2="true" invert_j3="true" invert_j4="true" invert_j5="true" invert_j6="true" invert_j7="true" has_podest="false" parent="mid_link">
+    <origin xyz="0 -0.10 0.0" rpy="-1.5708 0 3.1416" />
+  </xacro:schunk_lwa4d_custom>
+
+
+  <!-- Left Hand -->
+  <xacro:schunk_sdh parent="left_arm_ee_link" name="left_sdh">
+    <origin>
+      <pose xyz="0 0 0" rpy="0 0 0" />
+    </origin>
+  </xacro:schunk_sdh>
+
+  <!-- Right Hand -->
+  <xacro:schunk_sdh parent="right_arm_ee_link" name="right_sdh">
+    <origin>
+      <pose xyz="0 0 0" rpy="0 0 0" />
+    </origin>
+  </xacro:schunk_sdh>
+
+
+</robot>

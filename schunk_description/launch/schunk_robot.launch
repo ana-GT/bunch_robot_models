@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Load Schunk -->
+  <param name="robot_description" command="$(find xacro)/xacro '$(find schunk_description)/robots/schunk_arm_urdf.xacro'" />
+  <param name="robot_description_semantic" textfile="$(find schunk_description)/config/schunk_arm.srdf" />
+
+  <node pkg="tf" type="static_transform_publisher" name="schunk_bc" args="0 0 0 0 0 0 1 /world /base_link 100" />
+
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" respawn="false" output="screen">
+     <remap from="robot_description" to="robot_description" />
+     <rosparam param="source_list">["lwa4/joint_state_controller/joint_command"]</rosparam>
+     <rosparam param="use_gui">false</rosparam>
+     <rosparam param="rate">1000</rosparam>
+     <remap from="joint_states" to="joint_states" />
+  </node>
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen"/>
+
+	
+
+</launch>

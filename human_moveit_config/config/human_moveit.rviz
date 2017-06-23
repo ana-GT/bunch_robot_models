@@ -1,0 +1,455 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /TF1
+        - /TF1/Frames1
+        - /RobotModel1
+      Splitter Ratio: 0.74256
+    Tree Height: 741
+  - Class: rviz/Help
+    Name: Help
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        human/base:
+          Value: false
+        human/head:
+          Value: true
+        human/left_ankle:
+          Value: false
+        human/left_ankle_0:
+          Value: false
+        human/left_arm_mount:
+          Value: false
+        human/left_elbow:
+          Value: false
+        human/left_elbow_0:
+          Value: false
+        human/left_foot:
+          Value: false
+        human/left_hand:
+          Value: false
+        human/left_hip:
+          Value: false
+        human/left_hip_0:
+          Value: false
+        human/left_hip_1:
+          Value: false
+        human/left_knee:
+          Value: false
+        human/left_leg_mount:
+          Value: false
+        human/left_shoulder:
+          Value: false
+        human/left_shoulder_0:
+          Value: false
+        human/left_shoulder_1:
+          Value: false
+        human/left_wrist:
+          Value: false
+        human/left_wrist_0:
+          Value: false
+        human/neck:
+          Value: false
+        human/neck_0:
+          Value: false
+        human/neck_1:
+          Value: false
+        human/right_ankle:
+          Value: false
+        human/right_ankle_0:
+          Value: false
+        human/right_arm_mount:
+          Value: false
+        human/right_elbow:
+          Value: false
+        human/right_elbow_0:
+          Value: false
+        human/right_foot:
+          Value: false
+        human/right_hand:
+          Value: true
+        human/right_hip:
+          Value: false
+        human/right_hip_0:
+          Value: false
+        human/right_hip_1:
+          Value: false
+        human/right_knee:
+          Value: false
+        human/right_leg_mount:
+          Value: false
+        human/right_shoulder:
+          Value: false
+        human/right_shoulder_0:
+          Value: false
+        human/right_shoulder_1:
+          Value: false
+        human/right_wrist:
+          Value: false
+        human/right_wrist_0:
+          Value: false
+        human/shoulder_center:
+          Value: false
+        human/spine:
+          Value: false
+        human/spine_0:
+          Value: false
+        human/spine_1:
+          Value: false
+        human/spine_2:
+          Value: false
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        human/base:
+          human/left_leg_mount:
+            human/left_hip_0:
+              human/left_hip_1:
+                human/left_hip:
+                  human/left_knee:
+                    human/left_ankle_0:
+                      human/left_ankle:
+                        human/left_foot:
+                          {}
+          human/right_leg_mount:
+            human/right_hip_0:
+              human/right_hip_1:
+                human/right_hip:
+                  human/right_knee:
+                    human/right_ankle_0:
+                      human/right_ankle:
+                        human/right_foot:
+                          {}
+          human/spine_0:
+            human/spine_1:
+              human/spine_2:
+                human/spine:
+                  human/shoulder_center:
+                    human/left_arm_mount:
+                      human/left_shoulder_0:
+                        human/left_shoulder_1:
+                          human/left_shoulder:
+                            human/left_elbow_0:
+                              human/left_elbow:
+                                human/left_wrist_0:
+                                  human/left_wrist:
+                                    human/left_hand:
+                                      {}
+                    human/neck_0:
+                      human/neck_1:
+                        human/neck:
+                          human/head:
+                            {}
+                    human/right_arm_mount:
+                      human/right_shoulder_0:
+                        human/right_shoulder_1:
+                          human/right_shoulder:
+                            human/right_elbow_0:
+                              human/right_elbow:
+                                human/right_wrist_0:
+                                  human/right_wrist:
+                                    human/right_hand:
+                                      {}
+      Update Interval: 0
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: visualization_marker
+      Name: Marker
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Alpha: 0.7
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        human/base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/head:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/left_ankle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/left_ankle_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/left_arm_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/left_elbow:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/left_elbow_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/left_foot:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/left_hand:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/left_hip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/left_hip_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/left_hip_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/left_knee:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/left_leg_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/left_shoulder:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/left_shoulder_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/left_shoulder_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/left_wrist:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/left_wrist_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/neck:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/neck_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/neck_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/right_ankle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/right_ankle_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/right_arm_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/right_elbow:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/right_elbow_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/right_foot:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/right_hand:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/right_hip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/right_hip_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/right_hip_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/right_knee:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/right_leg_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/right_shoulder:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/right_shoulder_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/right_shoulder_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/right_wrist:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/right_wrist_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/shoulder_center:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/spine:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/spine_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        human/spine_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        human/spine_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotModel
+      Robot Description: human_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: human/base
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+  Value: true
+  Views:
+    Current:
+      Class: rviz/ThirdPersonFollower
+      Distance: 1.73138
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0.95324
+        Y: -0.0454063
+        Z: 1.3061e-06
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 0.289797
+      Target Frame: hip
+      Value: ThirdPersonFollower (rviz)
+      Yaw: 6.25041
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: true
+  Height: 876
+  Help:
+    collapsed: false
+  Hide Left Dock: true
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd00000001000000000000033300000326fc0200000005fb000000100044006900730070006c006100790073000000002800000326000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a00560069006500770073000000010b000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670000000145000002530000000000000000000005ff0000032600000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Views:
+    collapsed: false
+  Width: 1535
+  X: 65
+  Y: 24

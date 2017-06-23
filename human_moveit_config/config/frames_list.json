@@ -1,0 +1,10 @@
+{
+	"kinect":{
+		"light": ["human/head", "human/left_shoulder", "human/left_hand", "human/right_shoulder", "human/right_hand"],
+		"full": "all"
+	},
+	"opt": {
+		"light": ["human/shoulder_center", "human/head", "human/right_hand", "human/left_hand"],
+		"full": "all"
+	}
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="lwa4">
+    <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
+    <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
+    <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
+    <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
+    <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->   
+
+    <group name="left_arm">
+        <chain base_link="left_arm_base_link" tip_link="left_arm_7_link" />
+    </group>
+
+<!--    <group name="left_sdh">
+        <link name="left_sdh_palm_link" />
+        <link name="left_sdh_finger_11_link" />
+        <link name="left_sdh_finger_12_link" />
+        <link name="left_sdh_finger_13_link" />
+        <link name="left_sdh_finger_21_link" />
+        <link name="left_sdh_finger_22_link" />
+        <link name="left_sdh_finger_23_link" />
+        <link name="left_sdh_thumb_1_link" />
+        <link name="left_sdh_thumb_2_link" />
+        <link name="left_sdh_thumb_3_link" />
+    </group>
+-->
+    <!--<end_effector name="two_finger_gripper" parent_link="tracarm/hand_stationary_link" group="gripper" parent_group="arm" /> -->
+
+    <group_state name="Zero" group="left_arm">
+        <joint name="left_arm_1_joint" value="0" />
+        <joint name="left_arm_2_joint" value="0" />
+        <joint name="left_arm_3_joint" value="0" />
+        <joint name="left_arm_4_joint" value="0" />
+        <joint name="left_arm_5_joint" value="0" />
+        <joint name="left_arm_6_joint" value="0" />
+        <joint name="left_arm_7_joint" value="0" />
+    </group_state>
+    
+
+<!--    <group_state name="Close" group="left_sdh">
+        <joint name="left_sdh_palm_link" />
+        <joint name="left_sdh_finger_11_joint" value="0" />
+        <joint name="left_sdh_finger_12_joint" value="0" />
+        <joint name="left_sdh_finger_13_joint" value="0" />
+        <joint name="left_sdh_finger_21_joint" value="0" />
+        <joint name="left_sdh_finger_22_joint" value="0" />
+        <joint name="left_sdh_finger_23_joint" value="0" />
+        <joint name="left_sdh_thumb_1_joint" value="0" />
+        <joint name="left_sdh_thumb_2_joint" value="0" />
+        <joint name="left_sdh_thumb_3_joint" value="0" />
+    </group_state>
+-->
+
+    <disable_collisions link1="left_arm_1_link" link2="left_arm_2_link" reason="Adjacent" />
+    <disable_collisions link1="left_arm_2_link" link2="left_arm_3_link" reason="Adjacent" />
+    <disable_collisions link1="left_arm_3_link" link2="left_arm_4_link" reason="Adjacent" />
+    <disable_collisions link1="left_arm_4_link" link2="left_arm_5_link" reason="Adjacent" />
+    <disable_collisions link1="left_arm_5_link" link2="left_arm_6_link" reason="Adjacent" />
+    <disable_collisions link1="left_arm_6_link" link2="left_arm_7_link" reason="Adjacent" />
+    <disable_collisions link1="left_arm_5_link" link2="left_arm_7_link" reason="Never" />
+</robot>

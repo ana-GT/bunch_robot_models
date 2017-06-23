@@ -1,0 +1,9 @@
+- /kinect_frame
+- /opt/human/base
+- /opt/human/head
+- /opt/human/shoulder_center
+- /opt/human/right_elbow
+- /opt/human/left_elbow
+- /opt/human/right_hand
+- /opt/human/left_hand
+- /shapeo_calibr
