@@ -66,7 +66,8 @@
 
     <!-- joint between arm_base_link and arm_1_link -->
     <joint name="${name}_1_joint" type="revolute">
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <!-- <origin xyz="0 0 0" rpy="0 0 0" /> -->
+      <origin xyz="0 0 0" rpy="0 0 -1.5708" />
       <parent link="${name}_base_link"/>
       <child link="${name}_1_link"/>
       <xacro:axis_config invert="${invert_j1}"/>
@@ -95,11 +96,13 @@
 
     <!-- joint between arm_1_link and arm_2_link -->
     <joint name="${name}_2_joint" type="revolute">
-      <origin xyz="0 0 0.240" rpy="-${M_PI/2} -${M_PI/2} 0"/>
+<!--      <origin xyz="0 0 0.240" rpy="-${M_PI/2} -${M_PI/2} 0"/> -->
+      <origin xyz="0 0 0.240" rpy="-${M_PI/2} -${M_PI} 0"/>
       <parent link="${name}_1_link"/>
       <child link="${name}_2_link"/>
       <xacro:axis_config invert="${invert_j2}"/>
-      <limit effort="216" velocity="0.43633" lower="${-2.14 + safety_offset}" upper="${2.14 - safety_offset}"/>
+      <limit effort="216" velocity="0.43633" lower="${-3.71 + safety_offset}" upper="${0.57 - safety_offset}"/>
+      <!-- <limit effort="216" velocity="0.43633" lower="${-2.14 + safety_offset}" upper="${2.14 - safety_offset}"/> -->
     </joint>
 
     <link name="${name}_2_link">

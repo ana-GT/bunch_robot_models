@@ -10,7 +10,7 @@
   <xacro:include filename="$(find schunk_description)/urdf/sdh/sdh.urdf.xacro" />
 
    <!-- Create fixed base link (base of pedestal) -->
-  <link name="base_link" />
+  <link name="base_link"/>
   <link name="mid_link" />
 
   <joint name="base_mid_joint" type="fixed">
